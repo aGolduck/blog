@@ -1,4 +1,4 @@
-baseURL = "http://wpchou.github.io/"
+baseURL = "https://wpchou.github.io/"
 languageCode = "en"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "/home/wpchou/blog"
@@ -60,11 +60,11 @@ copyright = "wenpin"            # default: author.name ↓        # 默认为下
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "/home/wpchou/blog"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["technic"]
+  keywords = ["IT", "blog"]
   description = "wenpin's blog."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 10
+  archivePaginate = 50
 
   # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
   showArchiveCount = true
@@ -92,7 +92,7 @@ copyright = "wenpin"            # default: author.name ↓        # 默认为下
 
   postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
