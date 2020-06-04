@@ -219,3 +219,6 @@ copyright = "wenpin"            # default: author.name ↓        # 默认为下
 #  section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
 #  taxonomyTerm = ["HTML"]
+
+[markup.goldmark.renderer]
+  unsafe = true
