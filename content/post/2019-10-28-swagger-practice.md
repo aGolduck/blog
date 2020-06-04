@@ -4,7 +4,7 @@ tags:
 - swagger
 - openapi
 - nodejs
-title: swagger 在 node 项目中的实践
+title: swagger/openapi 在 node 项目中的实践
 ---
 
 Swagger, 现在也称 openapi, 定义了规范的 RESTFUL 接口文档标准，围绕这个标准产生了一个很丰富的[生态圈](https://apis.guru/awesome-openapi3/)。本文谈谈在 node 项目中应用这些工具的一些经验。
@@ -22,3 +22,5 @@ Swagger, 现在也称 openapi, 定义了规范的 RESTFUL 接口文档标准，�
 写文档的时候记得尽可能使用 $ref, allOf 等， 提高文档书写的可复用性。
 
 最后一个很重要的可以利用 swagger 对出参入参进行基本的类型和是否必须进行校验。可以用 oas-chow-chow. 进行校验的 openapi 必须严格遵守规范，最好使用 oas-validator 先进行校验。oas-validator 会在项目启动时检查 swagger 的语法，耗时比较长，可以在生产服务器禁用。
+
+TODO 加例子。

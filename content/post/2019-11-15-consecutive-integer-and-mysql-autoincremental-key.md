@@ -11,8 +11,7 @@ title: 连续抽奖号码与 MySQL 自增主键
 
 这其实跟 MySQL 自增主键的问题非常像。假如 counter 的当前值为 2, 以上的业务过程如下：
 
-1.1 获取 counter 的当前值 2
-1.2 counter 同时原子自增为 3
+1. 获取 counter 的当前值 2, counter 同时原子自增为 3
 2. 记录用户 ID 与抽奖号码元组 (user2, 2)
 3. 将 (user2, 2) 插入数据库
 

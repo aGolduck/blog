@@ -7,10 +7,10 @@ title: 《MySQL 实战 45 讲》拾遗
 
 极客时间上林晓斌的《MySQL 实战 45 讲》针对日常开发碰到的常见问题都有非常高的实践指导意义，虽然说在这一系列文章也简述了一些数据库原理，但要把整个系列的文章消化下来还是要具备相当的数据库基础。我是在看过下面几本书才看这个系列文章的，一来使得理解起文章中的例子相对轻松，二来有了具体的可操作实例，对照起书中的原理，也经常有恍然大明白的感觉。
 
-- 罗摩克里希纳. 数据库管理系统原理与设计. 清华大学出版社, 2003. http://book.douban.com/subject/1146233/.
-- 施瓦茨, 扎伊采夫, and 特卡琴科. 高性能MySQL. Translated by 宁海元, 周振兴, 彭立勋, and 翟卫祥刘辉. 电子工业出版社, 2013. https://book.douban.com/subject/23008813/.
-- 姜承尧. MySQL技术内幕. 机械工业出版社, 2010. https://book.douban.com/subject/5373022/.
-- MICK, ［ 日］. SQL进阶教程. Translated by 吴炎昌. 人民邮电出版社, 2017. https://book.douban.com/subject/27194738/.
+- [罗摩克里希纳. 数据库管理系统原理与设计. 清华大学出版社, 2003.](http://book.douban.com/subject/1146233/)
+- [施瓦茨, 扎伊采夫, and 特卡琴科. 高性能MySQL. Translated by 宁海元, 周振兴, 彭立勋, and 翟卫祥刘辉. 电子工业出版社, 2013.](https://book.douban.com/subject/23008813/)
+- [姜承尧. MySQL技术内幕. 机械工业出版社, 2010.](https://book.douban.com/subject/5373022/)
+- [MICK, ［ 日］. SQL进阶教程. Translated by 吴炎昌. 人民邮电出版社, 2017.](https://book.douban.com/subject/27194738/)
 
 下面并不是非常详细的笔记，仅仅是记录个人在学习中认为需要注意的一些点。
 
@@ -72,13 +72,13 @@ ALTER TABLE t ENGINE = InnoDB;
 
 ```sql
 /* 打开 optimizer_trace，只对本线程有效 */
-SET optimizer_trace='enabled=on'; 
+SET optimizer_trace='enabled=on';
 
 /* @a 保存 Innodb_rows_read 的初始值 */
 select VARIABLE_VALUE into @a from  performance_schema.session_status where variable_name = 'Innodb_rows_read';
 
 /* 执行语句 */
-select city, name,age from t where city='杭州' order by name limit 1000; 
+select city, name,age from t where city='杭州' order by name limit 1000;
 
 /* 查看 OPTIMIZER_TRACE 输出 */
 SELECT * FROM `information_schema`.`OPTIMIZER_TRACE`\G

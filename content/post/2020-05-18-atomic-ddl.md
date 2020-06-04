@@ -1,11 +1,14 @@
 ---
 date: "2020-05-18T00:00:00Z"
 title: 数据库自动迁移
+tags:
+- database
+- ORM
 ---
 
-一般来说，在小型应用以及应用原型快速开发阶段，关系数据库表定义
-自动迁移是非常方便的特性。现在成熟的 ORM 都有所支持。一般来说，
-我们进行一次成功的数据库迁移需要包括下面几步。
+在小型应用以及应用原型快速开发阶段，关系数据库表定义
+自动迁移是非常方便的特性。现在成熟的 ORM 都有所支持。
+以 typorm 为例，一般来说，我们进行一次成功的数据库迁移需要包括下面几步。
 
 1. 比较代码与数据库的表头定义，生成迁移脚本 `typeorm migration:generate -n`
 2. 编辑迁移脚本，使迁移过程更合理，更数据安全，有必要时可生成空脚本编辑 `typeorm migration:create`
@@ -32,9 +35,7 @@ TYPEORM_MIGRATIONS_RUN 提供了每次启动自动迁移的选项。
 [https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html](mysql 文档)
 明确说了：
 
-```
-Atomic DDL is not transactional DDL. DDL statements, atomic or otherwise, implicitly end any transaction that is active in the current session, as if you had done a COMMIT before executing the statement. This means that DDL statements cannot be performed within another transaction, within transaction control statements such as START TRANSACTION ... COMMIT, or combined with other statements within the same transaction.
-```
+> Atomic DDL is not transactional DDL. DDL statements, atomic or otherwise, implicitly end any transaction that is active in the current session, as if you had done a COMMIT before executing the statement. This means that DDL statements cannot be performed within another transaction, within transaction control statements such as START TRANSACTION ... COMMIT, or combined with other statements within the same transaction.
 
 任何的 DDL(数据定义语句)执行前都会自动作一个 `commit` 的动作. GAME OVER!
 流行的果然是辣鸡！我们来看看世界上最先进的开源数据库。

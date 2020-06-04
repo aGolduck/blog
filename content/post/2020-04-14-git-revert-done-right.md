@@ -1,5 +1,5 @@
 ---
-date: "2019-04-14T00:00:00Z"
+date: "2020-04-14T00:00:00Z"
 tags:
 - git
 title: 正确使用 git revert

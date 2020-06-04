@@ -17,11 +17,12 @@ title: 从 js 神奇的 map 说到函数的元数
 ```js
 [1, NaN, 3]
 ```
+？？？
 
 js 真是到处都是坑啊。原因在哪里呢？下面是 MDN `array.prototype.map` 和 `parseInt` 的文档。
 ```js
 var new_array = arr.map(function callback(currentValue[, index[, array]]) {
- // Return element for new_array 
+ // Return element for new_array
 }[, thisArg])
 ```
 ```js

@@ -15,7 +15,7 @@ schema 是可以直接获取的，SOFA 只需要这个 schema 就可以了。但
 
 这是 sofa 的基本用法
 
-```
+```ts
 interface SofaConfig {
   schema: GraphQLSchema;
   context?: Context;
@@ -50,7 +50,7 @@ app.use(
 的 example 中使用的是 makeExecutebaleSchema. 只要能生成有效的 schema
 就行。至少要 typeDefs. 如果使用默认 graphql 至少还要有 resolvers.
 
-```
+```ts
 export declare function makeExecutableSchema<TContext = any>({ typeDefs, resolvers, connectors, logger, allowUndefinedInResolve, resolverValidationOptions, directiveResolvers, schemaDirectives, parseOptions, inheritResolversFromInterfaces, }: IExecutableSchemaDefinition<TContext>): GraphQLSchema;
 ```
 
@@ -69,6 +69,4 @@ listen 后获取只能重启一个 express 实例，Guard 等机制不知道是�
 有时间损耗，有衔接工作。从 args 获取 source, contextValue.headers,
 variableValues 就可以发起远程请求。Sofa 文档也提到
 
-```
-Thanks to that you can even use a remote GraphQL Server (with Fetch or through Apollo Links).
-```
+> Thanks to that you can even use a remote GraphQL Server (with Fetch or through Apollo Links).
