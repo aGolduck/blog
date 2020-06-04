@@ -59,7 +59,7 @@ copyright = "wenpin"            # default: author.name ↓        # 默认为下
   gitRepo = "https://github.com/wpchou/blog.git"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "/home/wpchou/site"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "/home/wpchou/blog"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["technic"]
   description = "wenpin's blog."
 
