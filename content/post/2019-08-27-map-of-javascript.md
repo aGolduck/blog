@@ -1,10 +1,9 @@
----
-date: "2019-08-27T00:00:00Z"
-tags:
-- javascript
-- functional-programming
-title: 从 js 神奇的 map 说到函数的元数
----
++++
+date = "2019-08-27T00:00:00Z"
+tags = ["javascript", "functional-programming"]
+title = "从 js 神奇的 map 说到函数的元数"
+
++++
 
 从 lujun9972 的博客看到一则[博文](http://blog.lujun9972.win/blog/2019/07/08/javascript%E4%B8%AD%E7%A5%9E%E5%A5%87%E7%9A%84map/), 说在 https://medium.com/dailyjs/parseint-mystery-7c4368ef7b21 看到 js 的 map 神奇的一面。
 

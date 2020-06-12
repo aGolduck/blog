@@ -1,11 +1,9 @@
----
-date: "2019-07-11T00:00:00Z"
-tags:
-- swagger
-- openapi
-- web
-title: Bypass quirk of Swagger-UI try-it-out
----
++++
+date = "2019-07-11T00:00:00Z"
+tags = ["swagger", "openapi", "web"]
+title = "Bypass quirk of Swagger-UI try-it-out"
+
++++
 
 Swagger-UI 有一个很有用的特性，就是可以用 `Try it out` 按钮直接试用，配置好授权策略以后，还可以直接使用登陆态。但是我自己在使用的过程中经常会遇到一个问题。经常会以下的错误。
 

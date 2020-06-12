@@ -1,9 +1,9 @@
----
-date: "2019-06-10T00:00:00Z"
-tags:
-- mysql
-title: Distinct and Group By
----
++++
+date = "2019-06-10T00:00:00Z"
+tags = ["mysql"]
+title = "Distinct and Group By"
+
++++
 
 在 MySQL 里面, `DISTINCT` 原则上可以用 `GROUP BY` 替换。
 

@@ -1,11 +1,9 @@
----
-date: "2019-11-07T00:00:00Z"
-tags:
-- sequelize
-- mysql
-- nodejs
-title: 如何使用 Sequelize (自动)管理数据库事务
----
++++
+date = "2019-11-07T00:00:00Z"
+tags = ["sequelize", "mysql", "nodejs"]
+title = "如何使用 Sequelize (自动)管理数据库事务"
+
++++
 
 到目前为止，`Sequelize` 仍然是 nodejs 最成熟的 ORM 库。相关的文档有 manual 和 api rereference. 但老实说，写得不算好，manual 只能算 tutorial. api reference 也很多语焉不详，很多用法甚至要去看源码。Sequelize 是很早便成型的库，以 Promise 为核心设计，目前代码没有使用 async function, 文档也没有相关说明。 这倒也不影响我们使用 async function, 但是因为缺乏相关的文档，有时需要自己连蒙带猜的，尤其是事务的使用。本文介绍一下如何使用 Sequelize 的事务 (transaction), 重点讲一下如何实现事务的自动管理。其中，保存点(savepoint)相关的内容在中文互联网未能搜索到相关资料。
 

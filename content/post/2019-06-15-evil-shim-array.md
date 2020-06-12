@@ -1,9 +1,9 @@
----
-date: "2019-06-15T00:00:00Z"
-tags:
-- javascript
-title: 从 shim-array 说到 javascript 的一些问题
----
++++
+date = "2019-06-15T00:00:00Z"
+tags = ["javascript"]
+title = "从 shim-array 说到 javascript 的一些问题"
+
++++
 
 我在两个旧的 javascript 项目都遇到一个很让人摸不着头脑的问题，使用数组的 `find` 无论能不能找到，总是返回 `-1`. 影响很大，不只自己的代码不能用，像 `sequelize` 这样的第三方包也用不了。有一段时间只能放弃，后来花了很长时间终于搞明白了是一个叫 `collections` 的依赖包使用所谓的 `shim-array` 覆盖修改了 `Array.prototype.find`, 使得所有的数组的行为都发生了改变。因为以前从来没有遇到过这种修改全局对象的情况，所以都没有起疑过是这里出了问题。
 

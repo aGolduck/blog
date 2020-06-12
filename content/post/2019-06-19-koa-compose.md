@@ -1,10 +1,9 @@
----
-date: "2019-06-19T00:00:00Z"
-tags:
-- javascript
-- nodejs
-title: koa-compose
----
++++
+date = "2019-06-19T00:00:00Z"
+tags = ["javascript", "nodejs"]
+title = "koa-compose"
+
++++
 
 koa 的精华统共就这么几行。
 

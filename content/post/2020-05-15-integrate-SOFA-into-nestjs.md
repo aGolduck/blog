@@ -1,7 +1,8 @@
----
-date: "2020-05-15T00:00:00Z"
-title: 集成 SOFA 到 nestjs
----
++++
+date = "2020-05-15T00:00:00Z"
+title = "集成 SOFA 到 nestjs"
+
++++
 
 [https://github.com/Urigo/SOFA](SOFA) 是一个 express 中间件，
 可以将 graphql 查询转换成 restful 的 api. 最近将其集成到 nestjs

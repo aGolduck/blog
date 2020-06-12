@@ -1,10 +1,9 @@
----
-date: "2019-10-31T00:00:00Z"
-tags:
-- mysql
-- database
-title: 并发请求与 MySQL 事务隔离
----
++++
+date = "2019-10-31T00:00:00Z"
+tags = ["mysql", "database"]
+title = "并发请求与 MySQL 事务隔离"
+
++++
 
 旧文一则，记录处理数据异常的过程，借此阐述 MySQL 事务隔离的一些相关概念。
 

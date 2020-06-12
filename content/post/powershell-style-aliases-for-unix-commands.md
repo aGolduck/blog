@@ -1,10 +1,11 @@
 +++
-title = "Powershell style aliases for unix commands"
-date = 2020-06-12T17:55:00+08:00
-lastmod = 2020-06-12T17:58:33+08:00
-tags = ["unix", "Linux"]
 categories = ["Linux"]
+date = "2020-06-12T17:55:00+08:00"
 draft = false
+lastmod = "2020-06-12T17:58:33+08:00"
+tags = ["unix", "Linux"]
+title = "Powershell style aliases for unix commands"
+
 +++
 
 最近基本把 [Linux性能优化实战\_Linux\_性能调优-极客时间](https://time.geekbang.org/column/intro/140) 给看完了，从某种角度来讲，可以说就是学习了很多 unix/Linux 命令。我一直觉得 unix 的命令行命名风格是一个大败笔，使用大量的缩写，使得很多命令就算用了很久之后都不知道字面意思是什么，只能生背下来或者靠手熟， 尤其是非英语母语的人。很多时候在命令的 man page
