@@ -1,6 +1,7 @@
 +++
 date = "2019-11-15T00:00:00Z"
 tags = ["mysql"]
+categories = ["database"]
 title = "连续抽奖号码与 MySQL 自增主键"
 
 +++

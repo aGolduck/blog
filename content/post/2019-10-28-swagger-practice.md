@@ -1,6 +1,7 @@
 +++
 date = "2019-10-28T00:00:00Z"
-tags = ["swagger", "openapi", "nodejs"]
+tags = ["swagger", "openapi", "nodejs", "web"]
+categories = ["web"]
 title = "swagger/openapi 在 node 项目中的实践"
 
 +++

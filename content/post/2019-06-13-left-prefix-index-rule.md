@@ -1,6 +1,7 @@
 +++
 date = "2019-06-13T00:00:00Z"
 tags = ["database", "mysql"]
+categories = ["database"]
 title = "最左前缀原则"
 
 +++

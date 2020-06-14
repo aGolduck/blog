@@ -1,6 +1,7 @@
 +++
 date = "2020-05-18T00:00:00Z"
 tags = ["database", "ORM"]
+categories = ["database"]
 title = "数据库自动迁移"
 
 +++

@@ -1,6 +1,7 @@
 +++
 date = "2019-11-21T00:00:00Z"
 tags = ["node", "npm"]
+categories = ["javascript"]
 title = "npm 安装同一个包的不同版本"
 
 +++
@@ -53,7 +54,7 @@ client7.info(console.log)
 ```
 npm install esmaster@github:elastic/elasticsearch-js
 ```
- 
+
 ## 补充
 
 由上文的最后一条命令可看出，别名不局限于从 npm 下载的包。从 github 或者其它自定义 git 地址下载的包也可以使用别名。npm 如何安装其它来源的包可以参照[官方文档](https://docs.npmjs.com/cli/install)

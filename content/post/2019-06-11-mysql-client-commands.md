@@ -1,6 +1,7 @@
 +++
 date = "2019-06-11T00:00:00Z"
 tags = ["mysql"]
+categories = ["database"]
 title = "MySQL 命令行客户端指令"
 
 +++

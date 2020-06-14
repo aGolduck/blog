@@ -1,9 +1,12 @@
 +++
 date = "2020-02-29T00:00:00Z"
-tags = ["zsh"]
+tags = ["zsh", "oh-my-zsh"]
+categories = ["unix"]
 title = "oh-my-zsh gnu_utils 升级导致提示符路径名消失"
 
 +++
+
+记录下使用 `oh-my-zsh` 踩坑的过程。
 
 今天被自己的 zsh 环境坑到了。我用 antigen 来管理 zsh 插件，插件不多，主要是 oh-my-zsh 少量几个和 zsh-users 的仿 fish 插件。用 z 插件跳转到了一个同名的文件夹里，然后在编辑器使劲修改都没有用。花了几个小时，一直找不出问题。重装依赖包在编辑器里发现依赖包文件夹怎么也刷不出来，就觉得诡异。跑到 zsh 下 pwd, 天，居然路径不一致。
 

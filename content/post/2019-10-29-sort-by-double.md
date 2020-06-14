@@ -1,6 +1,7 @@
 +++
 date = "2019-10-29T00:00:00Z"
 tags = ["algorithm", "database"]
+categories = ["algorithm"]
 title = "从「浮点数排序法」说到数的类型"
 
 +++

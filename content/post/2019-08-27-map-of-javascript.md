@@ -1,6 +1,7 @@
 +++
 date = "2019-08-27T00:00:00Z"
 tags = ["javascript", "functional-programming"]
+categories = ["javascript"]
 title = "从 js 神奇的 map 说到函数的元数"
 
 +++

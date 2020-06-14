@@ -1,6 +1,5 @@
 +++
 title = "Powershell style aliases for unix commands"
-author = ["wenpin"]
 date = 2020-06-12T17:55:00+08:00
 lastmod = 2020-06-13T16:04:36+08:00
 tags = ["unix", "Linux"]

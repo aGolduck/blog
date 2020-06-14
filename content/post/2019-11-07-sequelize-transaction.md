@@ -1,6 +1,7 @@
 +++
 date = "2019-11-07T00:00:00Z"
 tags = ["sequelize", "mysql", "nodejs"]
+categories = ["database"]
 title = "如何使用 Sequelize (自动)管理数据库事务"
 
 +++

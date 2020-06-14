@@ -1,6 +1,7 @@
 +++
 date = "2019-10-23T00:00:00Z"
-tags = ["npm"]
+tags = ["npm", "javascript"]
+categories = ["javascript"]
 title = "npm 包私藏"
 
 +++

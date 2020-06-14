@@ -1,6 +1,7 @@
 +++
 date = "2020-04-14T00:00:00Z"
 tags = ["git"]
+categorise = ["unix"]
 title = "正确使用 git revert"
 
 +++

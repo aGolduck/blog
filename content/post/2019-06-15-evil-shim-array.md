@@ -1,6 +1,7 @@
 +++
 date = "2019-06-15T00:00:00Z"
 tags = ["javascript"]
+categories = ["javascript"]
 title = "从 shim-array 说到 javascript 的一些问题"
 
 +++

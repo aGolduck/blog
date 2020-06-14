@@ -1,6 +1,7 @@
 +++
 date = "2019-10-31T00:00:00Z"
 tags = ["mysql", "database"]
+categories = ["database"]
 title = "并发请求与 MySQL 事务隔离"
 
 +++

@@ -1,6 +1,7 @@
 +++
 date = "2019-07-28T00:00:00Z"
 tags = ["mysql"]
+categories = ["database"]
 title = "《MySQL 实战 45 讲》拾遗"
 
 +++

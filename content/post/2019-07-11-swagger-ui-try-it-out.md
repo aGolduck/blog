@@ -1,6 +1,7 @@
 +++
 date = "2019-07-11T00:00:00Z"
 tags = ["swagger", "openapi", "web"]
+categories = ["web"]
 title = "Bypass quirk of Swagger-UI try-it-out"
 
 +++

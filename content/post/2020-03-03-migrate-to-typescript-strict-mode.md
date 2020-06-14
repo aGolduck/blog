@@ -1,10 +1,9 @@
----
-date: "2019-03-03T00:00:00Z"
-tags:
-- typescript
-- javascript
-title: 应用 typescript 严格模式
----
++++
+date = "2019-03-03T00:00:00Z"
+tags = ["typescript", "javascript"]
+categories = ["javascript"]
+title = "应用 typescript 严格模式"
++++
 
 最近上手了 nestjs, 开始了 typescript 之旅。趁着项目新开始不久，免得日后积重难返，对代码应用了 strict 模式。strict 模式包括下文的几个选项，下面依次介绍此次迁移中遇到的问题和解决方法。
 
@@ -27,7 +26,7 @@ console.log(o[property])
 本质上这涉及到一个复杂的映身关系。对于对象A，它的每个属性p类型t(p)都是已知的，而且对象B有对应的属性(q)，类型是s(t(p))，怎么让编译器知道这个对应关系。
 
 ## strictNullChecks
-### TS2366: Function lacks ending return statement and return type does not include 'undefined' 
+### TS2366: Function lacks ending return statement and return type does not include 'undefined'
 一般是有分支死区，加上异常处理
 ### TS2532: Object is possibly 'undefined'
 typesrcipt 不获取任何运行时信息，有时显得非常蠢。
