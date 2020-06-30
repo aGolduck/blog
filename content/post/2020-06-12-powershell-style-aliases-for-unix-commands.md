@@ -1,7 +1,7 @@
 +++
 title = "Powershell style aliases for unix commands"
 date = 2020-06-12T17:55:00+08:00
-lastmod = 2020-06-13T16:04:36+08:00
+lastmod = 2020-06-30T14:29:16+08:00
 tags = ["unix", "Linux"]
 categories = ["Linux"]
 draft = false
@@ -17,7 +17,6 @@ draft = false
 但说实话，即使用了 `zsh-autosuggestions` 这类的工具，打完全称确实也比较累。日常使用还是原名（它本该是 alias)，不断地补充这个列表全当是为了方便记忆和加深理解吧。
 
 ```shell
-# alias 'link'='ln' # link is used
 alias 'advanced-top'='atop'
 alias 'block-device-trace'='blktrace'
 alias 'change-directory'='cd'
@@ -29,6 +28,7 @@ alias 'concatenate'='cat'
 alias 'connection-track'='conntrack'
 alias 'copy'='cp'
 alias 'data-statistics'='dstat'
+alias 'desktop-management-interface-decode'='dmidecode'
 alias 'diagnostic-message'='dmesg'
 alias 'disk-free'='df'
 alias 'disk-usage'='du'
