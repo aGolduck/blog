@@ -3,6 +3,7 @@ date = "2020-05-15T00:00:00Z"
 title = "集成 SOFA 到 nestjs"
 tags = ["nestjs"]
 categories = ["javascript"]
+draft = true
 +++
 
 [https://github.com/Urigo/SOFA](SOFA) 是一个 express 中间件，
