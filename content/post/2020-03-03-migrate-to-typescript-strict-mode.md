@@ -1,5 +1,5 @@
 +++
-date = "2019-03-03T00:00:00Z"
+date = "2020-03-03T00:00:00Z"
 tags = ["typescript", "javascript"]
 categories = ["javascript"]
 title = "应用 typescript 严格模式"
