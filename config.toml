@@ -181,12 +181,12 @@ copyright = "wenpin"            # default: author.name ↓        # 默认为下
 
   [params.social]                                         # 社交链接
     a-email = "wpchou@outlook.com.com"
-    # b-stack-overflow = "http://localhost:1313"
+    b-stack-overflow = "https://stackoverflow.com/users/6179969/wenpin-chou"
     # c-twitter = "http://localhost:1313"
     # d-facebook = "http://localhost:1313"
     # e-linkedin = "http://localhost:1313"
     # f-google = "http://localhost:1313"
-    g-github = "http://github.com/wpchou"
+    g-github = "https://github.com/wpchou"
     # h-weibo = "http://localhost:1313"
     # i-zhihu = "http://localhost:1313"
     # j-douban = "http://localhost:1313"
