@@ -1,7 +1,7 @@
 +++
 title = "几个 Haskell Functor/Monad 实例的演算推导"
 date = 2020-07-27T23:03:00+08:00
-lastmod = 2020-07-27T23:04:38+08:00
+lastmod = 2020-07-27T23:40:38+08:00
 tags = ["haskell", "functor", "monad"]
 categories = ["haskell"]
 draft = false
@@ -16,7 +16,6 @@ draft = false
 
 ## Definitions {#definitions}
 
-<span class="timestamp-wrapper"><span class="timestamp">[2018-12-02 日 12:04]</span></span>
 以下是 (applicative)functor/monad 的定义。除些还有几个用于它们身上的操作符，我们将在下一节中用几个实例推演它们是如何实现这些定义的，还有这些运算符在这些实例上运算的实际效果是什么
 
 ```haskell
@@ -64,8 +63,6 @@ sequenceA = foldr (liftA2 (:)) (pure [])
 
 
 ## Instances {#instances}
-
-<span class="timestamp-wrapper"><span class="timestamp">[2018-12-02 日 12:04]</span></span>
 
 
 ### Maybe {#maybe}
@@ -262,12 +259,9 @@ instance Applicative ZipList where
   sequenceA = foldr (liftA2 (:)) (ZipLits [])
 ```
 
-**\*\***
-
 
 ## Laws {#laws}
 
-<span class="timestamp-wrapper"><span class="timestamp">[2018-12-02 日 12:03]</span></span>
 最后，以下是 (applicative) functor/monad 必须遵守的法则，Haskell 编译器无法自动检查。需要手动验证，这里就不展开了。
 
 ```haskell
