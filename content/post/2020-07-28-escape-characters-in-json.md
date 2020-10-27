@@ -1,8 +1,8 @@
 +++
 title = "JSON 如何存储换行符"
-date = 2020-07-28T22:54:00+08:00
+date = 2020-10-27T10:58:00+08:00
 publishDate = 2020-07-28T00:00:00+08:00
-lastmod = 2020-07-28T22:54:42+08:00
+lastmod = 2020-10-27T10:58:59+08:00
 tags = ["javascript", "json"]
 categories = ["javascript"]
 draft = false
@@ -28,15 +28,14 @@ Line 2
 SyntaxError: Unexpected token
  in JSON at position 7
     at JSON.parse (<anonymous>)
-    at /tmp/babel-E1Nimy/js-script-nHHhoN:5:21
-    at Object.<anonymous> (/tmp/babel-E1Nimy/js-script-nHHhoN:9:2)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-    at startup (internal/bootstrap/node.js:283:19)
+    at /tmp/babel-Opt7jV/js-script-KGvIxD:5:21
+    at Object.<anonymous> (/tmp/babel-Opt7jV/js-script-KGvIxD:9:2)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
 undefined
 ```
 
@@ -70,7 +69,15 @@ console.log(Buffer.from(JSON.stringify('Line 1\nLine 2')))
 console.log(Buffer.from(JSON.stringify('Line 1\u000aLine 2')))
 ```
 
-从 Buffer 可以看出，序列化的时候作了转义: escape(`\n`) = escape(`\u000a`) = `\` + `n`
+```text
+: <Buffer 4c 69 6e 65 20 31 0a 4c 69 6e 65 20 32>
+: <Buffer 4c 69 6e 65 20 31 0a 4c 69 6e 65 20 32>
+: <Buffer 22 4c 69 6e 65 20 31 5c 6e 4c 69 6e 65 20 32 22>
+: <Buffer 22 4c 69 6e 65 20 31 5c 6e 4c 69 6e 65 20 32 22>
+: undefined
+```
+
+从 Buffer 可以看出，序列化的时候作了转义: escape(`\n`) = escape(`\u000a`) = `\` (`5c`) + `n` (`6e`)
 
 [RFC 8259 - The JavaScript Object Notation (JSON) Data Interchange Format](https://tools.ietf.org/html/rfc8259)
 对字符串的定义是：
@@ -97,7 +104,7 @@ quotation-mark = %x22      ; "
 unescaped = %x20-21 / %x23-5B / %x5D-10FFFF
 ```
 
-可以理解为这些控制字符序列化的时候转为了 `\` + `"\/bfnt` 的格式，而在 js 的字符串中，
+可以理解为这些控制字符序列化的时候转成了 `\` + `"\/bfnrt` 的格式，而在 js 的字符串中，
 `\` 必须写为 `\\`.
 
 ```js
@@ -121,4 +128,4 @@ Line 2
 undefined
 ```
 
-注意这里的 `\\n` 不是对 `\` 转义再存 `n` 哦，而是如上所述，转义 `\u000a` 存储为 `\` (写为 `\\`)加 `n`.
+注意这里的 `\\n` 不是对 `\` 转义再存 `n` 哦，而是如上所述，转义 `\u000a` 这个换行符存储为 `\` (写为 `\\`)加 `n`.
