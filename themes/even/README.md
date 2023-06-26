@@ -9,7 +9,7 @@ A super concise theme for Hugo
 
 > It's a port of the [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
 
-[Demo](https://blog.olowolo.com/example-site/) | [中文说明](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md)
+[Demo](https://hugo-theme-even.netlify.app) | [中文说明](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md)
 
 ## Screenshots
 
@@ -40,6 +40,16 @@ defaultContentLanguage = "en"  # en / zh-cn / other...
 Can also support any other languages as well. For example, to support german, create a file `/i18n/de.yaml` in the root folder of your Hugo site. For reference template you can see the [`en.yaml`](https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n/en.yaml) file.
 
 P.S. In multilingual mode, the language which currently being used to render the website will be used.
+
+### Language selector
+
+It is possible to enable language selector for multilingual site. It will be displayed in the header or in the slide menu.
+
+To enable it, set `showLanguageSelector` parameter to `true`.
+
+```toml
+showLanguageSelector = true
+```
 
 ## Favicon
 
@@ -76,6 +86,8 @@ There are five built-in theme colors ( Default | Mint Green | Cobalt Blue | Hot 
 cd ./themes/even/
 git pull
 ```
+
+**Whenever you update this theme, you should check the `CHANGELOG.md` file, there may be some breaking changes.**
 
 ## License
 
