@@ -8,7 +8,8 @@ categories = ["java"]
 draft = false
 +++
 
-# 最简单的修改日志级别的办法
+
+## 最简单的修改日志级别的办法
 
 Java 内置日志 `java.util.logging`的设计初衷是在大型项目环境下，每个包及类的层级各有各自的 Logger，且互相关联。但是在简单代码下使用和设置就显得非常繁琐且费解，改个日志级别都涉及到几个对象。以下是经过试验后得到的比较简单的解决方案
 
@@ -34,7 +35,7 @@ object Test {
 }
 ```
 
-# 主要概念
+## 主要概念
 
 * *Logger*: The main entity on which applications make logging calls. A Logger object is used to log messages for a specific system or application component.
 * *Handler*: Exports LogRecord objects to a variety of destinations including memory, output streams, consoles, files, and sockets. A variety of Handler subclasses exist for this purpose. Additional Handlers may be developed by third parties and delivered on top of the core platform.
@@ -48,13 +49,13 @@ object Test {
 
 一个 Logger 可以有多个 Handler. 每个 Logger 的日志流发到自身及其父 Logger 的 Handler
 
-# FAQ
+## FAQ
 
-## 如何获取日志器对象
+### 如何获取日志器对象
 
 Logging.getLogger
 
-## 如何修改当前日志级别
+### 如何修改当前日志级别
 
 简单的设置当前日志器日志级别不会起作用，日志器必须有实际的 Handler 才能起作用。没有手动加 Handler 的实际是根日志器的默认 handler 即一个 INFO 级别的 Console handler 在起作用。
 
@@ -69,7 +70,7 @@ Logging.getLogger
 2. 设置当前 Logger 的日志级别
 3. 设置新添加的 Handler 的日志级别
 
-# 消息流向图
+## 消息流向图
 
 假设有 Logger A.B, Logger A, Root Logger 三个 Logger，三者有层级关系。其中 Logger A.B 包含ConsoleHandler hcab 和 FileHandler hfab, Logger A 包含  FileHandler hfa Root Logger 包含 Console Handler hcr. 各自的日志级别标注如下。
 
